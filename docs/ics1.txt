@@ -1,0 +1,86 @@
+CentOS 7
+
+
+
+sysbench --test=memory run
+
+Memory - 1 GIB
+Processor - vCPUs 1
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 102400MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 22790666 (2278514.87 per second)
+
+22256.51 MiB transferred (2225.11 MiB/sec)
+
+
+General statistics:
+    total time:                          10.0001s
+    total number of events:              22790666
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                   32.16
+         95th percentile:                        0.00
+         sum:                                 4616.09
+
+Threads fairness:
+    events (avg/stddev):           22790666.0000/0.00
+    execution time (avg/stddev):   4.6161/0.00
+
+
+
+
+
+
+sysbench --test=cpu run
+
+Memory - 1 GIB
+Processor - vCPUs 1
+
+
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   618.75
+
+General statistics:
+    total time:                          10.0003s
+    total number of events:              6189
+
+Latency (ms):
+         min:                                    1.14
+         avg:                                    1.61
+         max:                                   29.48
+         95th percentile:                        1.96
+         sum:                                 9964.51
+
+Threads fairness:
+    events (avg/stddev):           6189.0000/0.00
+    execution time (avg/stddev):   9.9645/0.00
+
+
+
+
+
+

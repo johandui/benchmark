@@ -1,0 +1,63 @@
+N-Queen solution
+
+
+
+SingleThread 
+
+Minute based
+5  min - Solutions: 3317878, Elapsed Time 300.0001, CPU Time 299.8961, CPU Ut 100%
+
+2  min - Solutions: 1487057, Elapsed Time 120.0001, CPU Time 119.8490, CPU Ut 100%
+
+1  min - Solutions: 677514, Elapsed Time 60.0001, CPU Time 59.9830, CPU Ut 100%
+
+30 sec - Solutions: 422915, Elapsed Time 30.0001, CPU Time 29.9871, CPU Ut 100%
+
+ 
+N Based
+N = 8  - Solutions: 92, Elapsed Time  0.0004, CPU Time  0.0004, CPU Ut 100%
+
+N = 10 - Solutions: 1168, Elapsed Time  0.0121, CPU Time  0.0121, CPU Ut 100%
+
+N = 15 - Solutions: 2736540, Elapsed Time 86.9270, CPU Time 86.9089, CPU Ut 100%
+
+ 
+MultiThread 
+
+
+
+sub 5 0.000096
+sub 4 0.000101
+sub 3 0.000090
+sub 2 0.000093
+sub 1 0.000089
+sub 0 0.000080
+908 solutions of 10 queens puzzle.
+0.001264 seconds.
+
+
+
+sub 4 0.000009
+sub 3 0.000010
+sub 2 0.000008
+sub 1 0.000007
+sub 0 0.000007
+128 solutions of 8 queens puzzle.
+
+
+sub 0 83.129327
+sub 1 91.587447
+sub 2 98.877271
+sub 3 102.364357
+sub 4 105.205625
+sub 5 106.752197
+sub 6 107.987173
+sub 7 108.378151
+sub 8 108.396930
+95815104 solutions of 17 queens puzzle.
+108.402533 seconds.
+
+
+
+
+

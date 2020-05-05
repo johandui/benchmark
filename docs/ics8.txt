@@ -1,0 +1,76 @@
+Ubuntu 16.04 LTS
+
+Memory - 16GB
+Processor - 8 VCPUs
+
+
+
+
+sysbench --test=memory run
+
+Running the test with following options:
+Number of threads: 1
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 102400M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 104857600 (2346111.01 ops/sec)
+
+102400.00 MB transferred (2291.12 MB/sec)
+
+
+Test execution summary:
+    total time:                          44.6942s
+    total number of events:              104857600
+    total time taken by event execution: 35.9995
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                 19.27ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           104857600.0000/0.00
+    execution time (avg/stddev):   35.9995/0.00
+
+
+
+sysbench --test=cpu run
+
+
+Memory - 16GB
+Processor - 8 VCPUs
+
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 10000
+
+
+Test execution summary:
+    total time:                          11.6934s
+    total number of events:              10000
+    total time taken by event execution: 11.6844
+    per-request statistics:
+         min:                                  0.99ms
+         avg:                                  1.17ms
+         max:                                  5.99ms
+         approx.  
+         95 percentile:               1.33ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   11.6844/0.00

@@ -1,0 +1,80 @@
+Ubuntu 16.04 LTS
+
+Memory - 8GB
+Processor - 4 VCPUs
+
+
+
+
+sysbench --test=memory run
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 102400MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 31818616 (3181139.27 per second)
+
+31072.87 MiB transferred (3106.58 MiB/sec)
+
+
+General statistics:
+    total time:                          10.0002s
+    total number of events:              31818616
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                   12.10
+         95th percentile:                        0.00
+         sum:                                 4657.34
+
+Threads fairness:
+    events (avg/stddev):           31818616.0000/0.00
+    execution time (avg/stddev):   4.6573/0.00
+
+
+
+
+sysbench --test=cpu run
+
+
+Memory - 8GB
+Processor - 4 VCPUs
+
+
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   690.18
+
+General statistics:
+    total time:                          10.0008s
+    total number of events:              6904
+
+Latency (ms):
+         min:                                    0.95
+         avg:                                    1.44
+         max:                                   22.86
+         95th percentile:                        1.67
+         sum:                                 9967.49
+
+Threads fairness:
+    events (avg/stddev):           6904.0000/0.00
+    execution time (avg/stddev):   9.9675/0.00
+

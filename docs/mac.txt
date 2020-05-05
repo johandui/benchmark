@@ -1,0 +1,79 @@
+Kali GNU/Linux Rolling
+
+sysbench --test=memory run
+
+Memory - 7.8 GiB
+Processor - Intel® Core™ i5-4278U CPU @ 2.60GHz × 4
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 102400MiB
+  operation: write
+  scope: global
+  
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 55065526 (5505541.72 per second)
+
+53774.93 MiB transferred (5376.51 MiB/sec)
+
+
+General statistics:
+    total time:                          10.0001s
+    total number of events:              55065526
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                    0.38
+         95th percentile:                        0.00
+         sum:                                 4932.30
+
+Threads fairness:
+    events (avg/stddev):           55065526.0000/0.00
+    execution time (avg/stddev):   4.9323/0.00
+
+
+
+
+sysbench --test=cpu run
+
+
+Memory - 7.8 GiB
+Processor - Intel® Core™ i5-4278U CPU @ 2.60GHz × 4
+
+
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   991.67
+
+General statistics:
+    total time:                          10.0006s
+    total number of events:              9919
+
+Latency (ms):
+         min:                                    1.00
+         avg:                                    1.01
+         max:                                    2.78
+         95th percentile:                        1.04
+         sum:                                 9998.22
+
+Threads fairness:
+    events (avg/stddev):           9919.0000/0.00
+    execution time (avg/stddev):   9.9982/0.00
+
